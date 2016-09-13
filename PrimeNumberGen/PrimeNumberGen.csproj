@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="PrimeSaver.cs" />
     <Compile Include="PrimeWorker.cs" />

@@ -69,8 +69,8 @@ namespace PrimeNumberGen
                 currentMaxValue = currentStartValue + subsection;
                 Console.WriteLine("Starting Primes worker " + i + " with constraints of " + currentStartValue + " and " + currentMaxValue);
                 PrimeWorker worker = new PrimeWorker(i, currentStartValue, currentMaxValue, this);
-                Thread worker1 = new Thread(new ThreadStart(worker.StartWorker));
-                _workers.Add(worker1);
+                Thread WorkerThread = new Thread(new ThreadStart(worker.StartWorker));
+                _workers.Add(WorkerThread);
                 currentStartValue += subsection;
             }
         }
